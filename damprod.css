@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    font-family: "Merriweather Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===========NAVBAR START========== */
+
+.navbar{
+    width: 100%;
+    float: right;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #C5EDAC;
+    box-sizing: border-box;
+}
+
+.navbar nav{
+    margin-left: auto;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.Logo{
+    float: left;
+    margin-right: auto;
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #8BA779;
+    font-weight: 600;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 10px 20px; 
+    border-radius: 30px; 
+}
+
+.navbar nav ul li a:hover {
+    background-color: #8BA779;
+    color: #fff;
+}
+
+.navbar nav ul li .active-page {
+    background-color: #8BA779;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 20px; 
+    border-radius: 30px; 
+}
+
+/* ==========NAVBAR END========== */
+
+.bContainer {
+    background-color: #99C2A2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-image: 
+        linear-gradient(#B1DFBB, #B1DFBB), /* Line 1 */
+        linear-gradient(#B1DFBB, #B1DFBB), /* Line 2 */
+        linear-gradient(#B1DFBB, #B1DFBB), /* Line 3 */
+        linear-gradient(#B1DFBB, #B1DFBB); /* Line 4 */
+    background-repeat: no-repeat;
+    background-position: 
+        0 20%,  /* Line 1 position */
+        0 40%,  /* Line 2 position */
+        0 60%,  /* Line 3 position */
+        0 80%;  /* Line 4 position */
+    background-size: 100% 2px; /* Line width and thickness */
+}
+
+.headtext{
+    justify-content: center;
+    color: #FCFCFC;
+    font-weight: 700;
+    font-size: 56px;
+    margin-top: 10%;
+    margin-left: 10%;
+}
