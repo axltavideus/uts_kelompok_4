@@ -127,6 +127,24 @@ html, body{
     line-height: 1.5; 
 }
 
+.text-container a {
+    color: #589064;      
+    text-decoration: none; 
+}
+
+.text-container a:hover {
+    color: #589064;
+    text-decoration: underline;
+}
+
+.text-container a:visited {
+    color: #589064;
+}
+
+.text-container a:active {
+    color: #589064;
+}
+
 /* =====KONSUMSI END======= */
 
 .photo-container{
