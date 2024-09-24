@@ -137,11 +137,7 @@ html, body{
     text-decoration: underline;
 }
 
-.text-container a:visited {
-    color: #589064;
-}
-
-.text-container a:active {
+.text-container a:visited, .text-container a:active {
     color: #589064;
 }
 
