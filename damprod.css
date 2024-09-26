@@ -13,7 +13,7 @@ body {
     color: #333;
 }
 
-/* NAVBAR */
+/* ==========NAVBAR============ */
 .navbar{
     width: 100%;
     float: right;
@@ -69,7 +69,7 @@ body {
     border-radius: 30px; 
 }
 
-/* BANNER CONTAINER */
+/* ==========BANNER CONTAINER============= */
 .bContainer {
     background-color: #99C2A2;
     text-align: center;
@@ -90,7 +90,7 @@ body {
     margin-top: 20px;
 }
 
-/* TEXT & INFOGRAPHICS CONTAINER */
+/* ============TEXT & INFOGRAPHICS CONTAINER============== */
 .wContainer {
     display: flex;
     flex-wrap: wrap;
@@ -130,7 +130,7 @@ body {
     text-decoration: underline;
 }
 
-/* PHOTO AND TEXT CONTAINER */
+/* ===========PHOTO AND TEXT CONTAINER============= */
 .pContainer {
     background-color: #8BA779;
     padding: 40px 20px;
@@ -158,4 +158,25 @@ body {
 
 .pContainer p {
     line-height: 1.6;
+}
+
+/* ========SECTION DIVIDER========= */
+.section-divider {
+    border-bottom: 2px solid #1f7414;
+    margin: 40px auto;
+    width: 80%;
+}
+
+.nContainer {
+    margin: 40px 20px;
+    text-align: center;
+}
+
+.nContainer h1 {
+    color: #1f7414;
+    margin: 5px 0;
+}
+
+.nContainer h2{
+    margin: 0;
 }
