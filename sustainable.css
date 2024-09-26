@@ -81,6 +81,7 @@ body{
 
 /* ==========NAVBAR END========== */
 
+/*===========Main Body=========== */
 #main{
     background-image: url(assets/mainbg1.jpg);
     min-height: 70vh;
@@ -134,11 +135,6 @@ body{
     animation: blink-cursor 0.75s step-end infinite;
 }
 
-@keyframes blink-cursor {
-    from { border-right-color: white; }
-    to { border-right-color: transparent; }
-}
-
 
 .main-heading {
     margin-bottom: 20px;
@@ -149,17 +145,6 @@ body{
     margin-bottom: 10px;
 }
 
-/* @media screen and (max-width:520px){
-    .navbar nav ul {
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 50%;
-        height: 100px;
-        padding-top: 80px;
-    }
-} */
 
 .container1{
     max-width: 1200px;
@@ -182,6 +167,8 @@ body{
     margin: 0 auto;
 }
 
+/*===========Main End=========== */
+/*=========== Topics =========== */
 .topics {
     display: flex;
     gap: 20px;
@@ -222,21 +209,80 @@ body{
     line-height: 1.6; 
 }
 
+/*===========Topics End=========== */
 
-/* #info{
-    background-color: var(--satu);
+/*===========Pro Cons=========== */
+
+#procons {
+    background-color: var(--dua);
+    padding: 50px 0;
 }
 
-#info .container{
+.procons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 500px;
-    gap: 30px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-#info h2{
-    font-size: 20px;
-    font-family: 'Forum', sans-serif;
+.procons h1 {
+    font-size: 40px;
+    color: #fff; 
+    margin-bottom: 20px;
+}
+
+.procons p {
+    font-size: 18px;
+    max-width: 800px;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.procons-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.procons-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
+}
+
+.procons-image img:hover {
+    transform: scale(1.05);
+}
+
+/*===========Procons End=========== */
+
+/*===========Learn More=========== */
+
+#learn-more {
+    background-color: var(--empat); 
+    padding: 60px 0;
     text-align: center;
-} */
+}
+
+#learn-more h1 {
+    font-size: 40px;
+    color: var(--satu); 
+    margin-bottom: 20px;
+}
+
+#learn-more p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.8;
+}
+
+
+
+
