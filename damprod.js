@@ -8,7 +8,9 @@ window.addEventListener('scroll', () => {
 
     if (scrollTop > mainContent.offsetTop) {
         tocWrapper.classList.add('fixed');
+        mainContent.classList.add('fixed');
     } else {
         tocWrapper.classList.remove('fixed');
+        mainContent.classList.remove('fixed');
     }
 });

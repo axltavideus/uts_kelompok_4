@@ -15,10 +15,13 @@ body {
 
 .main-content {
     width: 75%; 
-    margin-left: 25%; 
     padding: 20px; 
     box-sizing: border-box; 
     overflow-x: hidden;
+}
+
+.main-content.fixed{
+    margin-left: 25%;
 }
 
 .container{
@@ -128,6 +131,8 @@ body {
     width: 20%; 
     margin: 20px 0px 0px 20px;
     height: fit-content;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .toc-container {
