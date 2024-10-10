@@ -79,6 +79,24 @@ body{
     border-radius: 30px; 
 }
 
+/* Burger Menu Styling */
+.burger {
+    display: none; /* Hide the burger menu by default */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px;
+    transition: all 0.3s ease;
+}
+
+
 /* ==========NAVBAR END========== */
 
 /*===========Main Body=========== */
@@ -519,4 +537,227 @@ footer {
 #shop-link .btn {
     font-size: 18px;
     padding: 12px 24px;
+}
+
+/* Navbar Responsive for Small Screens */
+@media screen and (max-width: 950px) {
+    .nav-links {
+        display: none; /* Hide links by default on smaller screens */
+        position: absolute;
+        top: 60px; /* Adjust the position to match the navbar height */
+        left: 0;
+        background-color: #C5EDAC;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links ul li {
+        margin: 20px 0;
+    }
+
+    .burger {
+        display: flex; /* Show burger menu on smaller screens */
+    }
+
+    .nav-active {
+        display: block; /* Show the nav menu when active */
+    }
+
+    /* Burger Animation */
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle .line2 {
+        opacity: 0;
+    }
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+}
+
+/* Responsive design for smaller devices */
+
+/* For screens with a maximum width of 768px (tablets) */
+@media screen and (max-width: 768px) {
+    /* Adjust the main section */
+    #main {
+        background-position: center center;
+        background-size: cover;
+        min-height: 50vh;
+    }
+
+    /* Adjust the main content */
+    .main-content {
+        padding: 20px;
+    }
+
+    /* Adjust the topics section */
+    .topics {
+        flex-direction: column;
+    }
+
+    .topic {
+        margin-bottom: 20px;
+    }
+
+    /* Adjust the procons section */
+    #procons {
+        padding: 20px;
+    }
+
+    .procons {
+        margin-bottom: 20px;
+    }
+
+    /* Adjust the learn more section */
+    #learn-more {
+        padding: 20px;
+    }
+
+    /* Adjust the article sections */
+    .article-section {
+        padding: 20px;
+    }
+
+    /* Adjust the comment section */
+    #comments-section {
+        padding: 20px;
+    }
+
+    .comment-container {
+        padding: 20px;
+    }
+
+    /* Adjust the shop link section */
+    #shop-link {
+        padding: 20px;
+    }
+}
+
+/* For screens with a maximum width of 480px (smartphones) */
+@media screen and (max-width: 480px) {
+    /* Adjust the navbar */
+    .navbar {
+        padding: 10px;
+    }
+
+    .Logo {
+        font-size: 18px;
+    }
+
+    .navbar nav ul li {
+        margin-left: 10px;
+    }
+
+    .navbar nav ul li a {
+        padding: 5px 10px;
+    }
+
+    /* Adjust the main section */
+    #main {
+        background-position: center center;
+        background-size: cover;
+        min-height: 40vh;
+    }
+
+    /* Adjust the main content */
+    .main-content {
+        padding: 10px;
+    }
+
+    .heading {
+        font-size: 3em;
+    }
+
+    .main-heading {
+        font-size: 24px;
+    }
+
+    /* Adjust the topics section */
+    .topics {
+        flex-direction: column;
+    }
+
+    .topic {
+        margin-bottom: 10px;
+    }
+
+    .topic img {
+        height: 150px;
+    }
+
+    /* Adjust the procons section */
+    #procons {
+        padding: 10px;
+    }
+
+    .procons {
+        margin-bottom: 10px;
+    }
+
+    .procons h1 {
+        font-size: 24px;
+    }
+
+    .procons p {
+        font-size: 14px;
+    }
+
+    /* Adjust the learn more section */
+    #learn-more {
+        padding: 10px;
+    }
+
+    #learn-more h1 {
+        font-size: 24px;
+    }
+
+    #learn-more p {
+        font-size: 14px;
+    }
+
+    /* Adjust the article sections */
+    .article-section {
+        padding: 10px;
+    }
+
+    .article-section h2 {
+        font-size: 20px;
+    }
+
+    .article-section p {
+        font-size: 14px;
+    }
+
+    /* Adjust the comment section */
+    #comments-section {
+        padding: 10px;
+    }
+
+    .comment-container {
+        padding: 10px;
+    }
+
+    .comment-container h2 {
+        font-size: 20px;
+    }
+
+    /* Adjust the shop link section */
+    #shop-link {
+        padding: 10px;
+    }
+
+    #shop-link h2 {
+        font-size: 20px;
+    }
+
+    #shop-link p {
+        font-size: 14px;
+    }
 }
