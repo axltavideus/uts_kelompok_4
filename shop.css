@@ -21,29 +21,7 @@ body {
     background-color: #f9f9f9;
 }
 
-.navbar {
-    background-color: var(--color1); /* Darker green background */
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.navbar ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-}
 
 main {
     padding: 20px;
