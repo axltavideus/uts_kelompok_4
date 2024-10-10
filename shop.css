@@ -1,0 +1,128 @@
+/* Color Palette */
+:root {
+    --color1: #7A918D;
+    --color2: #93B1A7;
+    --color3: #99C2A2;
+    --color4: #C5EDAC;
+    --color5: #DBFEB8;
+    --color6: #8BA779;
+}
+
+/* Basic Styles for the Shop Page */
+html, body {
+    height: 100%; /* Make sure html and body take full height */
+    margin: 0;
+}
+
+body {
+    display: flex; /* Set body to flex */
+    flex-direction: column; /* Stack children vertically */
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    background-color: var(--color1); /* Darker green background */
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Allow main to grow and fill space */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns */
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.product-item {
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.product-logo:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.product-item a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent */
+}
+
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color1);
+    color: white;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+.back-button-container {
+    text-align: center; /* Center the button */
+    margin: 20px 0; /* Add some spacing */
+}
+
+.back-button {
+    padding: 12px 24px; /* Button padding */
+    background-color: var(--color3); /* Light green color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.back-button:hover {
+    background-color: var(--color2); /* Darker green on hover */
+}
