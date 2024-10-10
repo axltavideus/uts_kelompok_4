@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Merriweather Sans", sans-serif;
     color: #333;
     background-color: #fafafa;
 }
@@ -43,9 +43,7 @@ header.navbar {
     color: #fff;
 }
 
-/* Hero Section */
 .hero-section {
-    background-image: url('assets/Fashionskrg/merak.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -56,6 +54,9 @@ header.navbar {
     text-align: center;
     position: relative;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    background-image: url('assets/Fashionskrg/merak.jpg');
+
 }
 
 .hero-content {
@@ -87,8 +88,8 @@ header.navbar {
     background-color: #29b948;
 }
 
-/* Content Section */
-.wContainer, .pContainer {
+
+.tContainer,.aContainer, .wContainer, .pContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,7 +101,7 @@ header.navbar {
     gap: 20px;
 }
 
-.wContainer img, .pContainer img {
+.tContainer img,.aContainer img, .wContainer img, .pContainer img {
     width: 40%;
     border-radius: 10px;
 }
@@ -121,7 +122,6 @@ header.navbar {
     color: #7f8c8d;
 }
 
-/* Footer */
 footer {
     background-color: #93b1a7;
     padding: 20px;

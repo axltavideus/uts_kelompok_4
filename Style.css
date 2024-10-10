@@ -1,0 +1,217 @@
+:root{
+    --satu : #7A918D;
+    --dua : #93B1A7;
+    --tiga : #99C2A2;
+    --empat : #C5EDAC;
+    --lima : #DBFEB8;
+    --enam : #8BA779;
+}
+
+body{
+    font-family: "Merriweather Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========NAVBAR START========== */
+
+.navbar{
+    width: 100%;
+    float: right;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--empat);
+    box-sizing: border-box;
+}
+
+.navbar nav{
+    margin-left: auto;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.Logo{
+    float: left;
+    margin-right: auto;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: var(--enam);
+    font-weight: 600;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 10px 20px; 
+    border-radius: 30px; 
+}
+
+.navbar nav ul li a:hover {
+    background-color: var(--enam);
+    color: #fff;
+}
+
+.navbar nav ul li .active-page {
+    background-color: var(--enam);
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 20px; 
+    border-radius: 30px; 
+}
+
+/* ===========HEADER========== */
+
+header {
+    background-image: url('assets/bgindex.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds a shadow for better text visibility */
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    margin-top: 40px;
+    padding: 15px 30px;
+    background-color: var(--enam);
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--tiga);
+}
+
+/* ===========FEATURE SECTION========== */
+
+.features {
+    background-color: var(--lima);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    color: var(--enam);
+}
+
+.features .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.feature {
+    padding: 20px;
+    background-color: var(--empat);
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.feature h3 {
+    margin-top: 15px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.feature p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+
+/* Scroll to Top Button */
+#scrollBtn {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; /* Make sure it is on top of other content */
+    font-size: 18px; 
+    border: none; 
+    outline: none; 
+    background-color: var(--enam); 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.feature-link {
+    text-decoration: none; /* Remove the underline from the anchor */
+    color: inherit; /* Inherit text color */
+}
+
+.feature-link:hover .feature {
+    transform: translateY(-10px); /* Keep hover effect */
+}
+
+
+#scrollBtn:hover {
+    background-color: var(--tiga); /* Change color when hovered */
+}
+
+/* ===========FOOTER========== */
+
+footer {
+    background-color: var(--dua);
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p {
+    font-size: 1em;
+}
