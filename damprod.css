@@ -13,7 +13,29 @@ body {
     color: #333;
 }
 
-/* NAVBAR */
+.main-content {
+    width: 75%; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    overflow-x: hidden;
+}
+
+.main-content.fixed{
+    margin-left: 25%;
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+}
+
+.container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ==========NAVBAR============ */
 .navbar{
     width: 100%;
     float: right;
@@ -69,7 +91,7 @@ body {
     border-radius: 30px; 
 }
 
-/* BANNER CONTAINER */
+/* ==========BANNER CONTAINER============= */
 .bContainer {
     background-color: #99C2A2;
     text-align: center;
@@ -90,18 +112,76 @@ body {
     margin-top: 20px;
 }
 
-/* TEXT & INFOGRAPHICS CONTAINER */
+/* ==========TOC CONTAINER (STICKY TOC)============= */
+.toc-wrapper {
+    width: 20%; /* Adjust the TOC width */
+    background-color: #F9F9F9;
+    padding: 20px;
+    margin: 20px 0px 0px 20px;
+    position: sticky;
+    top: 20px; /* Sticks to the top after scrolling 20px */
+    height: fit-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 100; /* Added to ensure TOC stays on top */
+}
+
+.toc-wrapper.fixed {
+    position: fixed; 
+    top: 20px; 
+    width: 20%; 
+    margin: 20px 0px 0px 20px;
+    height: fit-content;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toc-container {
+    float: left;
+    border-radius: 10px;
+    text-align: left; 
+    z-index: 1000;
+}
+
+.toc-container h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.toc-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.toc-container ul li {
+    margin-bottom: 10px;
+}
+
+.toc-container ul li a {
+    text-decoration: none;
+    color: #36be41;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.toc-container ul li a:hover {
+    color: #1f7414;
+}
+
+/* ============TEXT & INFOGRAPHICS CONTAINER============== */
 .wContainer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 40px 20px;
+    margin: 40px 0px;
+    float: right;
+    width: 100%;
 }
+
 
 .wContainer img {
     max-width: 100%;
     width: 300px;
-    margin-right: 20px;
+    margin-right: 40px;
     border-radius: 10px;
 }
 
@@ -121,7 +201,7 @@ body {
 }
 
 .text-container a {
-    color: #589064;
+    color: #35cd56;
     text-decoration: none;
     font-weight: 600;
 }
@@ -130,25 +210,26 @@ body {
     text-decoration: underline;
 }
 
-/* PHOTO AND TEXT CONTAINER */
+/* ===========PHOTO AND TEXT CONTAINER============= */
 .pContainer {
-    background-color: #8BA779;
+    background-color: #36be41;
     padding: 40px 20px;
     color: #FCFCFC;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    border-radius: 5px;
 }
 
 .pContainer img {
-    width: 100%;
+    width: 50%;
     max-width: 400px;
-    margin-right: 30px;
+    margin: 5px 30px 50px 30px;
     border-radius: 10px;
 }
 
 .pContainer .text-container {
-    max-width: 600px;
+    width:50%;
 }
 
 .pContainer h3 {
@@ -158,4 +239,63 @@ body {
 
 .pContainer p {
     line-height: 1.6;
+}
+
+/* ========SECTION DIVIDER========= */
+.section-divider {
+    border-bottom: 2px solid #1f7414;
+    margin: 40px auto;
+    width: 80%;
+}
+
+.nContainer {
+    margin: 40px 20px;
+    text-align: center;
+}
+
+.nContainer h1 {
+    color: #1f7414;
+    margin: 5px 0;
+}
+
+.nContainer h2{
+    margin: 0;
+}
+
+/* ========C SECTION========= */
+
+.cContainer {
+    position: relative;
+    background-image: url('assets/Dampak Produksi/Group 3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.text-overlay {
+    position: relative;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-overlay {
+    max-width: 600px;
+}
+
+.text-overlay h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.text-overlay p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
