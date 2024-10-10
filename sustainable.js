@@ -63,3 +63,14 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(typeText, 500);
 });
 
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+
+// Burger menu functionality
+burger.addEventListener('click', () => {
+    // Toggle the nav menu
+    navLinks.classList.toggle('nav-active');
+
+    // Burger animation
+    burger.classList.toggle('toggle');
+});
