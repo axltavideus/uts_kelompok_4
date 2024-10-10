@@ -332,12 +332,22 @@ footer {
 /* ==========MEDIA QUERIES=========== */
 
 /* Navbar Responsive for Small Screens */
+/* Navbar Responsive for Small Screens */
 @media screen and (max-width: 950px) {
-    
     .nav-links {
         display: none; /* Hide links by default on smaller screens */
+        position: absolute;
+        top: 60px; /* Adjust the position to match the navbar height */
+        left: 0;
+        background-color: #C5EDAC;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
+    .toc-wrapper{
+        display: none;
+    }
 
     .nav-links ul {
         flex-direction: column;
@@ -352,7 +362,7 @@ footer {
     }
 
     .nav-active {
-        transform: translateX(0); /* Slide in the nav menu when active */
+        display: block; /* Show the nav menu when active */
     }
 
     /* Burger Animation */
@@ -366,13 +376,17 @@ footer {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    .toc-wrapper {
-        display: none;
+    .main-content{
+        width: 100%;
     }
 
-    .main-content {
+    .pContainer .text-container{
         width: 100%;
-        padding: 20px;
+        margin: auto;
+    }
+
+    .pContainer .img{
+        margin: auto;
     }
 }
 
