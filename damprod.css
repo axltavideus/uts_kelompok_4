@@ -386,6 +386,7 @@ footer {
     .navbar nav ul {
         flex-direction: column;
         align-items: center;
+        display: none;
     }
 
     .navbar nav ul li {
