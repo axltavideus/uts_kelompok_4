@@ -283,6 +283,240 @@ body{
     line-height: 1.8;
 }
 
+/* Bagian Artikel */
+.article-section {
+    padding: 50px 20px;
+    background-color: var(--dua);
+    color: #fff;
+}
+
+.article-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.article-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Topics Section */
+.topic img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.topic img:hover {
+    transform: scale(1.05);
+}
+
+.topic h3 {
+    margin-top: 15px;
+    font-size: 22px;
+    color: var(--satu);
+}
+
+/* Article Sections */
+.article-section {
+    background-color: #f8f8f8;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.article-section h2 {
+    font-size: 30px;
+    color: var(--satu);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.article-section h2:before {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: var(--dua);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.article-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Procons Section */
+.procons {
+    text-align: center;
+}
+
+.procons h1 {
+    font-size: 36px;
+    color: var(--satu);
+}
+
+.procons-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Title Style */
+.section-title h1 {
+    font-size: 40px;
+    color: var(--satu);
+    margin-bottom: 10px;
+}
+
+.section-title .line {
+    width: 100px;
+    height: 4px;
+    background-color: var(--dua);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.line {
+    background-color: var(--dua);
+}
+
+/* Smooth hover effect for buttons */
+.btn {
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--satu);
+    transform: translateY(-3px);
+}
+
+/* Comment Section Styling */
+#comments-section {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.comment-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.comment-container h2 {
+    font-size: 30px;
+    color: var(--satu);
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.comment-container h2:before {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: var(--dua);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.comment-form .form-group {
+    margin-bottom: 20px;
+}
+
+.comment-form label {
+    font-size: 16px;
+    color: var(--satu);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+    outline: none;
+    border-color: var(--dua);
+}
+
+.comment-form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: var(--dua);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+    background-color: var(--satu);
+}
 
 
 
+footer {
+    background-color: #93b1a7;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer-content {
+    font-size: 1em;
+}
+
+/* Shop Link Section Styling */
+#shop-link {
+    background-color: var(--dua); /* Use your defined color variable */
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#shop-link h2 {
+    font-size: 30px;
+    color: #fff; /* Change color as needed */
+    margin-bottom: 10px;
+}
+
+#shop-link p {
+    font-size: 18px;
+    color: #f0f0f0; /* Change color as needed */
+    margin-bottom: 20px;
+}
+
+#shop-link .btn {
+    font-size: 18px;
+    padding: 12px 24px;
+}
