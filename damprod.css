@@ -91,6 +91,23 @@ body {
     border-radius: 30px; 
 }
 
+/* Burger Menu Styling */
+.burger {
+    display: none; /* Hide the burger menu by default */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px;
+    transition: all 0.3s ease;
+}
+
 /* ==========BANNER CONTAINER============= */
 .bContainer {
     background-color: #99C2A2;
@@ -298,4 +315,122 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: #93b1a7;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer-content {
+    font-size: 1em;
+} 
+
+/* ==========MEDIA QUERIES=========== */
+
+/* Navbar Responsive for Small Screens */
+@media screen and (max-width: 950px) {
+    
+    .nav-links {
+        display: none; /* Hide links by default on smaller screens */
+    }
+
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links ul li {
+        margin: 20px 0;
+    }
+
+    .burger {
+        display: flex; /* Show burger menu on smaller screens */
+    }
+
+    .nav-active {
+        transform: translateX(0); /* Slide in the nav menu when active */
+    }
+
+    /* Burger Animation */
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle .line2 {
+        opacity: 0;
+    }
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .toc-wrapper {
+        display: none;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* Styles for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar nav ul li {
+        margin: 10px 0;
+    }
+
+    .bContainer {
+        padding: 50px 10px;
+    }
+
+    .headtext {
+        font-size: 32px;
+    }
+
+    .wContainer img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .wContainer, .pContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pContainer img {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .text-container {
+        max-width: 100%;
+    }
+
+    .pContainer .text-container {
+        width: 100%;
+    }
+
+    .cContainer {
+        height: auto;
+        padding: 20px;
+    }
+
+    .banner-img {
+        max-width: 100%;
+        height: auto;
+    }
 }
