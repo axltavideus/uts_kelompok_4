@@ -18,6 +18,7 @@ buttons.forEach(button => {
 });
 
 
+
 const backgrounds = [
     'url(assets/mainbg1.jpg)',  
     'url(assets/mainbg2.jpg)',  
