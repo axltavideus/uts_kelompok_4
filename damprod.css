@@ -383,9 +383,23 @@ footer {
         margin: auto;
     }
 
-    .pContainer .img{
+    .pContainer .photo-container{
         margin: auto;
     }
+
+    .wContainer .text-container{
+        width: 100%;
+        margin: auto;
+    }
+
+    .wContainer .photo-container{
+        margin: auto;
+    }
+
+    .wContainer .info-img{
+        margin: auto;
+    }
+
 }
 
 /* Styles for screens smaller than 480px */
