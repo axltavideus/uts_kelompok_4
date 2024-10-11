@@ -19,7 +19,7 @@ header.navbar {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #7a918d;
+    background-color: #C5EDAC;
 }
 
 .navbar nav ul {
@@ -39,7 +39,7 @@ header.navbar {
 
 .navbar nav ul li a:hover,
 .navbar nav ul li a.active-page {
-    background-color: #93b1a7;
+    background-color: #62e48b;
     color: #fff;
 }
 
