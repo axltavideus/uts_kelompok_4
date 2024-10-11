@@ -21,8 +21,6 @@ body {
     background-color: #f9f9f9;
 }
 
-
-
 main {
     padding: 20px;
     text-align: center;
@@ -35,7 +33,6 @@ main {
     gap: 20px;
     padding: 20px;
 }
-
 
 .product-item {
     text-align: center;
@@ -103,4 +100,50 @@ footer {
 
 .back-button:hover {
     background-color: var(--color2); /* Darker green on hover */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* 1 column */
+    }
+    .product-item {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search-container {
+        margin: 10px 0;
+    }
+    #search {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search-container {
+        margin: 5px 0;
+    }
+    #search {
+        width: 200px;
+    }
 }
