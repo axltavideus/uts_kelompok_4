@@ -289,8 +289,9 @@ body{
 
 #learn-more h1 {
     font-size: 40px;
-    color: var(--satu); 
+    color: #fff; 
     margin-bottom: 20px;
+    text-shadow: rgba(0, 0, 0, 0.5);
 }
 
 #learn-more p {
@@ -383,7 +384,9 @@ body{
 
 .procons h1 {
     font-size: 36px;
-    color: var(--satu);
+    color: #fff;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+
 }
 
 .procons-image img {
